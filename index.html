@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    
+    <title>Frontend Mentor | E-commerce product page</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script type = "module" src="./script.js"></script>
+    
+  </head>
+  <body>
+    <section>
+    <nav class="nav-main">
+      <ul class="nav-links">
+        
+        <li class="nav-hero"><img class="mob-menu" src="./images/icon-menu.svg"><a  href="#">sneakers</a></li>
+        <li class="hover-el"><a  href="#">Collections</a></li>
+        <li class="hover-el"><a  href="#">Men</a></li>
+        <li class="hover-el"><a  href="#">Women</a></li>
+        <li class="hover-el"><a  href="#">About</a></li>
+        <li class="hover-el"><a  href="#">Contact</a></li>
+      </ul>
+      <ul class="nav-cart">
+        <li>
+          <a class="cart-links" href="#"><img class="cart-icon" src="./images/icon-cart.svg">
+            <span class="cart-quantity">0</span>
+          </a>
+          <span class="cart-dropdown">
+            <div class="dropdown-head">Cart</div>
+              <hr class="solid" />
+            <div class="dropdown-inner">
+              <span class="empty-cart">Your cart is Empty.</span>
+            </div>
+          </span>
+      </li>
+        <li ><a class="av-img" href="#"><img class ="avatar" src="./images/image-avatar.png"></a></li>
+      </ul>
+    </nav>
+    <hr class="solid" />
+    <div class="product-details">
+      <div class="product-images">
+        <div class="hero-image">
+          <img class="img-main" src="./images/image-product-1.jpg">
+        </div>
+        <div class="other-images">
+          <img class="img-thumbnail" data-img="1" src="./images/image-product-1.jpg">
+          <img class="img-thumbnail" data-img="2" src="./images/image-product-2-thumbnail.jpg">
+          <img class="img-thumbnail" data-img="3" src="./images/image-product-3-thumbnail.jpg">
+          <img class="img-thumbnail" data-img="4" src="./images/image-product-4-thumbnail.jpg">
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-kicker">Sneaker Company</div>
+        <div class="product-header">Fall Limited Edition Sneakers</div>
+        <div class="product-description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </div>
+        <div class="product-price">
+          <div class="discount">
+            <div class="discount-price">$125.00</div>
+          <div class="discount-percent">50%</div>
+        </div>
+        <div class="original-price">$250.00 </div>
+        <div class="add-btn">
+          <div class="btn-quantity">
+            <button class="btn minus"><img class="btn-click " src="./images/icon-minus.svg"></button><span class="quantity">0</span>
+            <button class="btn plus"><img class="btn-click " src="./images/icon-plus.svg"></button>
+          </div>
+        <button class="add-to-cart">
+          <img class="add-to-cart-icon" src="./images/icon-cart.svg" /> 
+          <span class="add-to-cart-text">Add to cart</span>
+        </button> 
+       </div>
+      </div>
+    </div>
+    <div class="menu-items">
+      <ul>
+      <li class="hover-menu"><a  href="#"><img class="close-btn" src="./images/icon-close.svg"></a></li>
+      <li class="hover-menu"><a  href="#">Collections</a></li>
+      <li class="hover-menu"><a  href="#">Men</a></li>
+      <li class="hover-menu"><a  href="#">Women</a></li>
+      <li class="hover-menu"><a  href="#">About</a></li>
+      <li class="hover-menu"><a  href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="modal-overlay overlay">
+    <div class="img-modal modal">
+      <div class="product-images prod-modal">
+        <div class="close-modal"><img class="close btn" src="./images/icon-close.svg"></div>
+        <div class="hero-image">
+          <img class="img-main" src="./images/image-product-1.jpg">
+        </div>
+        <div class="arrow-btn">
+          <div class="pic btn-left"><img class="btn btn-arrow" src="./images/icon-previous.svg">
+          </div>
+          <div class="pic btn-right" ><img class="btn btn-arrow" src="./images/icon-next.svg">
+          </div>
+      </div>
+      <div class="other-images">
+          <img class="img-thumbnail" data-img="1" src="./images/image-product-1-thumbnail.jpg">
+          <img class="img-thumbnail" data-img="2" src="./images/image-product-2-thumbnail.jpg">
+          <img class="img-thumbnail" data-img="3" src="./images/image-product-3-thumbnail.jpg">
+          <img class="img-thumbnail" data-img="4" src="./images/image-product-4-thumbnail.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  </body>
+</html>
